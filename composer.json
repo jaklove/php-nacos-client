@@ -13,6 +13,10 @@
             "PhpHelper\\NacosSdk\\": "src/"
         }
     },
+    "authors": {
+        "name": "zhourenjie",
+        "emial": "1004330995@qq.com"
+    },
     "minimum-stability": "stable",
     "require": {
         "php": ">=7.2",
