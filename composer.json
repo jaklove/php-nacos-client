@@ -1,0 +1,21 @@
+{
+    "name": "zhourenjie/php-nacos-client",
+    "description": "this is php nacos client",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "nacos"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Zhourenjie\\PhpNacosClient\\": "src/",
+            "PhpHelper\\NacosSdk\\": "src/"
+        }
+    },
+    "minimum-stability": "beta",
+    "require": {
+        "php": ">=7.2",
+        "guzzlehttp/guzzle": "~6.0"
+    }
+}
