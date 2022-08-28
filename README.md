@@ -23,8 +23,11 @@ $application = new Application(new Config([
 ]));
 
 $response = $application->auth->login('nacos', 'nacos');
-$result = Json::decode((string) $response->getBody());
+$result = json_decode($response->getBody(),true);
 
 $response = $application->config->get('hyperf-service-config', 'DEFAULT_GROUP');
-$result = Json::decode((string) $response->getBody());
+$result = json_decode($response->getBody(),true);
+
+//具体请看nacos官网 open api设计
+@link(https://nacos.io/zh-cn/docs/open-api.html)
 ```
