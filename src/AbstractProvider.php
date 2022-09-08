@@ -69,6 +69,9 @@ abstract class AbstractProvider
     public function request($method, $uri, array $options = [])
     {
         $token = $this->getAccessToken();
+        if(empty($token)){
+            throw new \PhpHelper\NacosSdk\Exception\InvalidArgumentException("token is empty");
+        }
         if($token){
             $options[RequestOptions::QUERY]['accessToken'] = $token;
         }
