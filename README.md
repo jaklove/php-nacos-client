@@ -4,7 +4,7 @@
 ## 安装
 
 ```shell
-composer require hyperf/nacos-sdk-incubator
+composer require zhourenjie/php-nacos-client
 ```
 ```php
 <?php
