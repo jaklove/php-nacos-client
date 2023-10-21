@@ -1,7 +1,7 @@
 # Nacos PHP SDK
 
 
-## 安装
+## 安装下面composer包
 
 ```shell
 composer require zhourenjie/php-nacos-client
